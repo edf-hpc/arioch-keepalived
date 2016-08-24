@@ -8,7 +8,10 @@ Homepage: https://forge.puppet.com/arioch/keepalived
 
 Package: puppet-module-arioch-keepalived
 Architecture: all
-Depends: ${misc:Depends}, puppet-common, puppet-module-puppetlabs-stdlib, puppet-module-puppetlabs-concat
+Depends: puppet-common,
+         puppet-module-puppetlabs-concat,
+         puppet-module-puppetlabs-stdlib,
+         ${misc:Depends}
 Description: Puppet module keepalived
  Puppet lets you centrally manage every important aspect of your system
  using a cross-platform specification language that manages all the
